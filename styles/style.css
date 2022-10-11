@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+html, body{
+	max-width: 720px;
+	margin: auto;
+	overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #2B3136;
+	color: white;
+}
+
+#page-transitions{z-index:2;}
+
+#page-deco-top{
+	position:fixed;
+	height:2px;
+	left:0px;
+	right:0px;
+	top:0px;
+	background-color:#2B3136;
+	z-index:10;
+}
+
+#page-deco-bottom{
+	position:fixed;
+	height:2px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	background-color:#e34e47;
+	z-index:10;
+}
+
+.footer{
+	display: block;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	height:30px;
+	text-align:center;
+	width:100%;
+	margin:10px auto 0px auto;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+	border-top: solid 1px #e34e47;
+	background-color: #2B3136;
+	border-radius: 10px;
+}
+
+.footer a{float:left; width:35px; height:35px; background-color:#3d3e42; border-radius:35px; line-height:35px; color:#FFFFFF; margin:0px 4px 0px 4px;}
+.footer p{ font-family:'Dosis', sans-serif; font-size:14px; line-height:25px; font-size:12px; margin-bottom:10px;}
+
+/*---Header Style---*/
+
+.logo{
+	display: block;
+	margin: auto;
+	max-height: 441px;
+	max-width: 720px;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom:10px;
+	}
+	
+/*Fonts*/
+
+@font-face {font-family: android; src: url(fonts/and_black.ttf);}
+@font-face {font-family: samsung; src: url(fonts/SamsungOne.ttf);}
+@font-face {font-family: sfpro; src: url(fonts/sfpro.ttf);}
+@font-face {font-family: Dosis; src: url(fonts/dosis.otf);}
+
+/*Buttons*/
+
+.button{height:43px; line-height:43px; text-align:center; text-shadow:none;}
+.button a{color: white; font-weight: 500; text-transform:uppercase;}
+
+/*Preloader*/
+
+#page-preloader{background-color: #2B3136; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000;}
+#loader {display: block; position: relative; left: 50%; top: 50%; width: 75px; height: 75px; margin: -37px 0 0 -37px; border: 3px solid #3498db;z-index: 1500;}
+#loader:before {content: ""; position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; border: 3px solid #e74c3c;}
+#loader:after {content: ""; position: absolute; top: 15px; left: 15px; right: 15px; bottom: 15px; border: 3px solid #f9c922;}
+
+#loader {border: 3px solid transparent; border-top-color: #3498db;}
+#loader:before {border: 3px solid transparent; border-top-color: #e74c3c;}
+#loader:after {border: 3px solid transparent; border-top-color: #f9c922;}
+
+#loader {border-radius: 50%; -webkit-animation: spin 0.8s linear infinite; animation: spin 0.8s linear infinite;}
+#loader:before {border-radius: 50%; -webkit-animation: spin 5s linear infinite; animation: spin 5s linear infinite;}
+#loader:after {border-radius: 50%; -webkit-animation: spin 1.6s linear infinite; animation: spin 1.6s linear infinite;}
+
+.hide-preloader{opacity:0!important; pointer-events: none!important; transition:all 350ms ease!important;}
+
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/*Block Quote*/
+
+.blockquote{font-weight:300; font-size:14px; font-style: italic; margin-bottom: 15px; margin-top: 15px; color:# FFFFFF;}
+.blockquote-border{font-weight:300; font-size:14px; font-style: italic; border-left:solid 5px #00a86d;; padding-left:10px; margin-bottom: 15px; margin-top: 15px; color:# FFFFFF;}
+
+/*Highlight*/
+
+.highlight{color:#FFFFFF; padding: 2px 4px 2px 4px;}
+
+/*Modal*/
+.blocker{z-index:9; position:fixed; top:0;right:0;bottom:0;left:0;width:100%;height:100%;overflow:auto;padding:0px;box-sizing:border-box;background-color:#000;background-color:rgba(0,0,0,0.75);text-align:center}
+.blocker:before{z-index:9; content:"";display:inline-block;height:100%;vertical-align:middle;margin-right:-0.05em}
+.blocker.behind{z-index:9; background-color:transparent}
+.modal{color:#000000; overflow: scroll; max-height: 80vh; z-index:10; margin-top: 20px; margin-bottom: 20px; display:none; vertical-align:middle;position:relative;z-index:2;max-width:720px;box-sizing:border-box;width:95%;background:#fff;padding:15px 10px;-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;-ms-border-radius:2px;border-radius:2px;-webkit-box-shadow:0 0 10px #000;-moz-box-shadow:0 0 10px #000;-o-box-shadow:0 0 10px #000;-ms-box-shadow:0 0 10px #000;box-shadow:0 0 10px #000;text-align:left}
+.modal h4 {display:inline-block; margin-left: 5px; margin-bottom: 0px; font-weight: 600;}
+.modal p{padding-left:5px; width:100%; height:40px; line-height:40px;}
+.modal p>a{font-family: 'samsung'; display:inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 80%;}
+.modal p:hover{background: #f8f8f8; cursor: pointer;}
+.modal p:hover>button{background: #3B444B;}
+.modal a.close-modal{transition:all 300ms ease; padding-left:0px; margin-top: 10px; z-index:9; float:right; display:block; width:80px; height:30px; text-align: center; color: white; line-height: 30px; background-color: #3B444B; border-radius: 2px;}
+.modal a.close-modal:hover{transition:all 300ms ease;background:#c0392b}
+.modal-spinner{z-index:9; display:none;position:fixed;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);padding:12px 16px;border-radius:5px;background-color:#111;height:20px}
+.modal-spinner>div{z-index:9; border-radius:100px;background-color:#fff;height:20px;width:2px;margin:0 1px;display:inline-block;-webkit-animation:sk-stretchdelay 1.2s infinite ease-in-out;animation:sk-stretchdelay 1.2s infinite ease-in-out}
+.modal-spinner .rect2{-webkit-animation-delay:-1.1s;animation-delay:-1.1s}
+.modal-spinner .rect3{-webkit-animation-delay:-1.0s;animation-delay:-1.0s}
+.modal-spinner .rect4{-webkit-animation-delay:-0.9s;animation-delay:-0.9s}@-webkit-keyframes sk-stretchdelay{0%,40%,100%{-webkit-transform:scaleY(0.5)}20%{-webkit-transform:scaleY(1.0)}}@keyframes sk-stretchdelay{0%,40%,100%{transform:scaleY(0.5);-webkit-transform:scaleY(0.5)}20%{transform:scaleY(1.0);-webkit-transform:scaleY(1.0)}}
+
+/* Tabs */
+
+.tabset > input[type="radio"] {position: absolute; left: -200vw;}
+.tabset .tab-panel {height: 0px; opacity: 0;}
+.tab-panels {padding-top: 5px; border-top: 0px solid #ccc;}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child {height: auto; display: block; transition:all 1500ms ease; opacity: 1}
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2) {height: auto; display: block; transition:all 1500ms ease; opacity: 1}
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3) {height: auto; display: block; transition:all 500ms ease; opacity: 1}
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4) {height: auto; display: block; transition:all 500ms ease; opacity: 1}
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5) {height: auto; display: block; transition:all 500ms ease; opacity: 1}
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {height: auto; display: block; transition:all 500ms ease; opacity: 1}
+.tabset > input:nth-child(13):checked ~ .tab-panels > .tab-panel:nth-child(7) {height: auto; display: block; transition:all 500ms ease; opacity: 1}
+
+.tabset > label {transform:scale(0.9, 0.9); opacity: .2; position: relative; display: inline-block; padding: 0px 5px 15px 0px; margin-right: 10px; cursor: pointer; font-size:14px; font-weight: 600; font-family: 'samsung'; }
+.tabset > label:hover {opacity: 0.7; color: white; transition:all 300ms ease;}
+.tabset > input:focus + label {transform:scale(0.8, 0.8); opacity: 1; color: white; transition:all 300ms ease;}
+.tabset > input:checked + label {opacity: 1; color: white; transition:all 300ms ease; transform:scale(1.0, 1.0);}
+
+.tabset > label::after {content: ""; transform:scale(0.9, 0.9);  position: absolute; left: 0px; bottom: 10px; width: 25%; height: 4px; background: #8d8d8d;}
+.tabset > input:hover + label::after {background: #00A833; transition:all 300ms ease;}
+.tabset > input:focus + label::after {transform:scale(0.8, 0.8); background: #0086EC; transition:all 300ms ease;}
+.tabset > input:checked + label::after {background: #0086EC; transition:all 300ms ease; transform:scale(1.0, 1.0);}

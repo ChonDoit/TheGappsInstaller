@@ -1,0 +1,37 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "The Gapps Installer",
+  "short_name": "The Gapps Installer",
+  "scope": "/",
+  "icons": [{
+    "src": "./styles/icon/ldpi.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "./styles/icon/mdpi.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "./styles/icon/hdpi.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "./styles/icon/xhdpi.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "./styles/icon/xxhdpi.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }, {
+      "src": "./styles/icon/xxxhdpi.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+  "theme_color": "#2B3136",
+  "background_color": "#FFFFFF",
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "natural"
+}

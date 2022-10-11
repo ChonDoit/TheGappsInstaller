@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>THE GAPPS INSTALLER</title>
+<meta name="theme-color" content="#2B3136" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" />
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<link rel="stylesheet" type="text/css" href="styles/framework.css" />
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/plugins.js"></script>
+</head>
+
+<body>
+
+<div id="page-preloader"><div id="loader"></div></div>
+<div id="page-deco-top"></div>
+<div id="page-transitions">
+	
+	<div class="content">
+	
+		<img src="styles/images/logo.png" class="logo" title="The Gapps Installer"></img>
+
+		<div class="center-text">
+			<a href="#about" class="bt-40 button button-blue">ABOUT IT</a>
+			<a href="#features" class="bt-40 button button-jade">FEATURES</a>
+			<a href="#packages" class="bt-40 button button-yellow">PACKAGES</a>
+			<a href="#changelogs" class="bt-40 button button-pink">CHANGELOG</a>
+			<a href="#downloads" class="bt-40 button button-red">DOWNLOADS</a>
+			<a href="#support" class="bt-40 button button-arsenic">SUPPORT</a>
+		</div>
+
+		<div class="deco deco-thick"></div>
+		
+		<div class="bg-content" id="about">
+			<button class="bt-100 button button-blue center-text">ABOUT IT</button>
+			¡Oh shit, another GApps package!
+			<br><br>
+			The Gapps Installer is focused on recover that what google apps took from phones, Battery and Performance!<br><br>
+			With magic tricks and more magic tricks I'm slowly reaching that goal.
+			<br><br>
+			See below for features list :3
+		</div>
+
+		<div class="bg-content" id="features">
+			<button class="bt-100 button button-jade center-text">FEATURE LIST</button>
+				•  Only ARM64 builds<br>
+				•  MINI-ME Package (Less than Pico)<br>
+				•  BASIC and STANDARD Addons (check below for details)<br>
+				•  Easy to use Config Files<br>
+				•  OK Google support (STANDARD ONLY)<br>
+				•  Predefined System Components<br>
+				•  Battery Optimizations + GMS Doze<br>
+				•  Notifications working fine with GMS DOZE<br>
+				•  Debloated permissions (WIP)<br>
+				•  Debloated unnecessary things<br>
+				•  Google Maps & Dialer support<br>
+				•  Unlimited High/Original Quality Backup on Google Photos<br>
+				•  Lastest aptX blobs<br>
+				•  Force Basic Attestation for Safety Net (@kdrag0n)
+			</div>
+				
+			<div class="bg-content" id="features">
+				<button class="bt-100 button button-magenta center-text">CONFIG FILES</button>
+				Place the desired ones in the same folder where the GAPPS ZIP FILE is located<br>
+				<br>
+				• BASE PACKAGE<br>
+				tgi-core: Play Services/Store things only. No sync, setup, etc.<br>
+				tgi-nosetup: Avoid install SETUP WIZARD<br>
+				tgi-noopt: Avoid apply GMS DOZE<br>
+					<br>
+				• STANDARD ADDON<br>
+				tgi-noassistant: Avoid Install Google Assistant<br>
+					<br>
+				• MICRO-G<br>
+				tgi-aurora: Keep Aurora Store instead Play Store<br>
+			</div>
+		
+		<div class="bg-content" id="packages">
+			<button class="bt-100 button button-yellow center-text">APPS PER PACKAGE</button>
+			
+			<div class="tabset">
+				<input type="radio" name="tabsat" id="tab3" aria-controls="core" checked>
+				<label for="tab3">MINI-ME</label>
+				<input type="radio" name="tabsat" id="tab4" aria-controls="mini">
+				<label for="tab4">CORE</label>
+				<input type="radio" name="tabsat" id="tab5" aria-controls="addons">
+				<label for="tab5">ADDONS</label>
+				<input type="radio" name="tabsat" id="tab6" aria-controls="go">
+				<label for="tab6">MICRO-G</label>
+				
+				<div class="tab-panels">
+					
+					<section id="mini" class="tab-panel">
+						•  Config Updater<br>
+						•  Data Transfer Tool<br>
+						•  Google Extension Shared<br>
+						•  Google Extension Services<br>
+						•  Google Calendar Sync<br>
+						•  Google Contacts Sync<br>
+						•  Google Partner Setup<br>
+						•  Google Play Services<br>
+						•  Google Services Framework<br>
+						•  Play Store<br>
+						•  Setup Wizard<br>
+					</section>
+					
+					<section id="core" class="tab-panel">
+					    Through config file only.<br><br>
+						•  Config Updater<br>
+						•  Google Extension Shared<br>
+						•  Google Extension Services<br>
+						•  Google Partner Setup<br>
+						•  Google Play Services<br>
+						•  Google Services Framework<br>
+						•  Play Store<br>
+					</section>
+					
+					<section id="addons" class="tab-panel">
+					    Standalone packages who can be flashed over any GApps Package.<br><br>
+						<b>BASICS ADDON</b><br>
+						• Google Calculator<br>
+						• Google Calendar<br>
+						• Google Contacts<br>
+						• Google Dialer<br>
+						• Google Messages<br>
+						• Lineage Clock<br>
+						<br>
+						<b>STANDARD ADDON</b><br>
+						•  Android Auto Stub<br>
+						•  Device Health Services + Turbo Adapter<br>
+						•  Digital Wellbeing<br>
+						•  Google App + OK Google Enrollment<br>
+					</section>
+					
+					<section id="microg" class="tab-panel">
+						• MicroG<br>
+						• GSFProxy<br>
+						• DroidGuard<br>
+						• Aurora Store & Services<br>
+						• Play Store<br>
+						• Google Calendar & Contacts Syncs<br>
+						• NLP: Apple, Deja Vu, Mozilla, Nominatim, Radio Cell
+					</section>
+				</div>
+			</div>
+		</div>
+		
+		<div class="bg-content" id="changelogs">
+			<button class="bt-100 button button-pink">CHANGELOGS</button><br>
+				<div class="tabset">
+					<input type="radio" name="tabset" id="tab7" aria-controls="s" checked>
+					<label for="tab7">SQUEAK</label>
+					<input type="radio" name="tabset" id="tab8" aria-controls="r">
+					<label for="tab8">ROAR</label>
+					<input type="radio" name="tabset" id="tab9" aria-controls="q">
+					<label for="tab9">QUACK</label>
+					<input type="radio" name="tabset" id="tab10" aria-controls="p">
+					<label for="tab10">PIE</label>
+					<input type="radio" name="tabset" id="tab11" aria-controls="o">
+					<label for="tab11">OREO</label>
+					<input type="radio" name="tabset" id="tab12" aria-controls="n">
+					<label for="tab12">NOUGAT</label>
+					<br>
+				<div class="tab-panels">
+					
+					<section id="s" class="tab-panel">
+					    <button class="btr button bg-blue-dark">ANDROID SQUEAK • 20220313</button><br>
+					    | Initial 12L Release<br>
+					    <br>
+						<button class="btr button bg-blue-dark">ANDROID SQUEAK • 20220209</button><br>
+						| Merged February changes<br>
+						| Added some missing components to Addons<br>
+					</section>
+					
+					<section id="r" class="tab-panel">
+						<button class="btr button bg-red-dark">ANDROID ROAR • 20211207</button><br>
+						| Merged test build changes<br>
+						| Delete /product framework-res* overlay on inbuilt GApps Roms only<br>
+						| Little fixes here and there<br>
+					</section>
+					
+					<section id="q" class="tab-panel">
+						<button class="btr button bg-jade">ANDROID QUACK • 20210509</button><br>
+						| Move to sunfish base<br>
+						| Merged some latest changes<br>
+					</section>
+					
+					<section id="p" class="tab-panel">
+						<button class="btr button bg-orange-dark">ANDROID PIE • Whatever build</button><br>
+						| Can't even remember what was the last thing i did to thems <br>
+					</section>
+					
+					<section id="o" class="tab-panel">
+						<button class="btr button bg-pink-light">ANDROID OREO • 20200807</button><br>
+						| Added GO variant<br>
+						| Updates for MINI and STANDARD builds<br><br>
+					</section>
+					
+					<section id="n" class="tab-panel">
+						<button class="btr button bg-blue-dark">ANDROID NOUGAT • 20200801</button><br>
+						| Last Update for thems (Untested)
+					</section>
+				
+				</div>
+			</div>
+		</div>
+		
+		<div class="bg-content" id="downloads">
+			<button class="bt-100 button button-red">DOWNLOADS</button>
+		
+			<div class="center-text">
+			<a href="./releases/?dir=squeak" target="_blank" class="bt-50 button button-magenta">ANDROID SQUEAK</a>
+			<a href="./releases/?dir=roar" target="_blank" class="bt-50 button button-red-dark">ANDROID ROAR</a>
+			<a href="./releases/?dir=quack" target="_blank" class="bt-50 button button-jade">ANDROID QUACK</a>
+			<a href="./releases/?dir=pie" target="_blank" class="bt-50 button button-orange">ANDROID PIE</a>
+			<a href="./releases/?dir=oreo" target="_blank" class="bt-50 button button-pink2">ANDROID OREO</a>
+			<a href="./releases/?dir=nougat" target="_blank" class="bt-50 button button-blue">ANDROID NOUGAT</a>
+			<a href="./releases/?dir=microg" target="_blank" class="bt-50 button button-yellow">MICRO-G</a>
+			<a href="./releases/tgi_config_files.zip" target="_blank" class="bt-50 button button-arsenic">CONFIG FILES</a>
+			</div>
+		</div>
+		
+		<div class="bg-content center-text" id="support">
+			For bug reports or doubts join to the telegram group<br><br>
+			<a href="https://t.me/thegappsinstaller" target="_blank" class="bt-50 button button-telegram">TELEGRAM GROUP</a>
+		</div>
+
+		<div class="center-text">
+			The Gapps Installer © 2017-2021<br>
+			El Rancho de Cornelio
+		</div>
+		
+	</div>
+	
+</div>
+</body>
+</html>
