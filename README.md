@@ -1,3 +1,3 @@
-# The Gapps Installer Website
+# The Gapps Installer Repository
 
-https://chondoit.github.io/TheGapps/
+https://chondoit.github.io/TheGappsInstaller/
